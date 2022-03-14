@@ -30,5 +30,7 @@ class RedditPagingSource(private val redditService: RedditService) :
     override val keyReuseSupported: Boolean = true
     override fun getRefreshKey(state: PagingState<String, RedditPost>): String? {
         TODO("Not yet implemented")
+        // I left this here otherwise it would crash, since the new version
+        // of Paging needs the getRefreshKey Implementation, and it's day 3 :D
     }
 }

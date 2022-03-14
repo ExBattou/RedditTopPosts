@@ -27,12 +27,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun fetchPosts() {
         lifecycleScope.launch {
-            swipeContainer.isRefreshing = true
             redditViewModel.fetchPosts().collectLatest { pagingData ->
                 redditAdapter.submitData(pagingData)
-
+                swipeContainer.isRefreshing = false
             }
-            swipeContainer.isRefreshing = false
         }
     }
 
@@ -42,6 +40,6 @@ class MainActivity : AppCompatActivity() {
             header = RedditLoadingAdapter { redditAdapter.retry() },
             footer = RedditLoadingAdapter { redditAdapter.retry() }
         )
-        swipeContainer.setOnRefreshListener { redditAdapter.refresh() }
+        swipeContainer.setOnRefreshListener { fetchPosts() }
     }
 }

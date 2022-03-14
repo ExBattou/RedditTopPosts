@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Adrian/AndroidStudioProjects/RedditTopPosts/app/src/main/res/drawable/ic_star.xml" value="0.172" />
+        <entry key="..\:/Users/Adrian/AndroidStudioProjects/RedditTopPosts/app/src/main/res/drawable/splash_background.xml" value="0.172" />
         <entry key="..\:/Users/Adrian/AndroidStudioProjects/RedditTopPosts/app/src/main/res/layout/activity_main.xml" value="0.11041666666666666" />
         <entry key="..\:/Users/Adrian/AndroidStudioProjects/RedditTopPosts/app/src/main/res/layout/adatpter_row.xml" value="0.11041666666666666" />
         <entry key="..\:/Users/Adrian/AndroidStudioProjects/RedditTopPosts/app/src/main/res/layout/item_loading_state.xml" value="0.11041666666666666" />
