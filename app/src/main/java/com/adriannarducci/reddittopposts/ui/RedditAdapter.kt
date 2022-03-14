@@ -38,6 +38,7 @@ class RedditAdapter :
                 Glide
                     .with(itemView)
                     .load(redditPost.urlPic)
+                    .placeholder(R.color.white)
                     .into(imagePost)
 
             }
